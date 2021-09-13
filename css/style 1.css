@@ -1,0 +1,28 @@
+body {
+    background-color: #7a7c81;
+}
+h1 {
+    text-align: center;
+    color: rgba(23, 233, 4, 0.671);
+}
+h2{
+    text-align: center;
+    color: rgba(23, 233, 4, 0.671);
+}
+h3{
+    text-align: left;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.Titulo1
+{
+    text-align: left;
+    
+}
+
+header {
+    padding: 20px 0 0 0;
+    background: #1d2124;
+    text-align: center;
+}
+
