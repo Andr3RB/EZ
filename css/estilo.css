@@ -1,0 +1,58 @@
+
+body{
+    
+    background: #c4c2c1;
+	
+}
+header .textos-header{
+    display: flex;
+    font-size: 50px;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+header .textos-header1{
+    display: flex;
+    color: rgba(245, 132, 3, 0.952);
+    font-size: 20px;
+    height: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Titulo{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.Titulo1{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+   
+}
+.BotonesCV{
+    
+    position:relative;
+    top: 100%;
+	left: 50%;
+	margin: 150px 100px 100px -50px;
+	width:10px;
+	height:300px;
+    font-size: 100;
+    
+    
+    
+
+}
