@@ -14,44 +14,37 @@
 
 <body>
     <header>
-        <section class="textos-header">
+        <section class="header">
             <h1>EZ$&Buying</h1>
-            
-        </section>
-        <section class="textos-header1">
             <h2>Compra facil y vende seguro  </h2>
         </section>
     </header>
     <section class="Inicio">
-        <h1 class="Titulo">Inicio de sesion Vendedor </h1>
+        <h3 class="Titulo">Inicio de sesion Vendedor </h3>
         <div class="forma">
             <form action="interfazV.html" method="POST">
-                 <input type="email" name="c" placeholder="Escribe tu correo"/>
-                 <input type="password" name="p" placeholder="Escribe tu password"/>
-                 <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
+                <input type="email" name="c" placeholder="Escribe tu correo"/>
+                <input type="password" name="p" placeholder="Escribe tu password"/>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
             </form>
+            <h4 class="Titulo1">Crear cuenta
+                <form action="interfazV.html" method="POST">
+                    <h5>
+                        <input type="email" name="c" placeholder="Escribe tu correo"/>
+                        <input type="password" name="p" placeholder="Escribe tu password"/>
+                        <input type="confirmarpassword" name="cp" placeholder="Confirma tu password"/>
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
+                    </h5>
+                </form>
+            </h4>
+
     
         </div>
     </section>
     
     
     
-    <main>
-        <section class="Registro nuevo">
-            <h1 class="Titulo1">Crear cuenta
-                <div class="forma">
-                    <form action="registrar.php" method="POST">
-                         <input type="text" name="nombre" placeholder="Escribe tu nombre"/>
-                         <input type="text" name="tienda" placeholder="Escribe nombre de la tienda"/>
-                         <input type="email" name="c" placeholder="Escribecorreo"/>
-                         <input type="password" name="p" placeholder="Escribe tu password"/>
-                         <input type="confirmarpassword" name="cp" placeholder="Confirma tu password"/>
-                         <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
-                    </form>
-                </div>
-            </h1>
-        </section>
-    </main>
+
 
     
 </body>
