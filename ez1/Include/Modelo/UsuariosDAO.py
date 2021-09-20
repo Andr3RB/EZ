@@ -1,24 +1,28 @@
-from flask import json
-import Include.conexion as cnx 
 from Include.Modelo.UsuariosVO import UsuariosVO
+from flask import Flask, app, render_template, json, request 
+from flaskext.mysql import MySQL
+import Include.conexion as cnx 
 
-class UsuariosDAO:
-    def __init__(self):
-        self.__tabla = "Usuarios"
+#class UsuariosDAO:
+#    def __init__(self):
+#        self.__tabla = "Usuarios"
 
-    def selectALL(self):
-        try:
-            conn=cnx.mysql.connect()
-            cursor=conn.cursor()
-            cursor.execute('SELECT * FROM ' +self.__tabla +' ORDER BY Id DESC')
-            data=cursor.fetchall()
-            arreglo=[]
-            for fila in data:
-                uvo = UsuariosVO(fila[0], fila[1], fila[2], fila[3], fila[4], fila[5])
-                arreglo.append(uvo)
-            return arreglo
-        except Exception as d:
-            return json.dumps({'error':str(d)})
-        finally:
-            cursor.close()
-            conn.close()
+
+#@app.route("/LoginC", methods = ['POST'])
+#def LoginC():
+ #           return render_template('LoginComprador.html')
+# @app.route("/LoginC/registuser", methods = ['POST'])
+# def registuser():
+#         #try:
+#             conn=cnx.mysql.connect()
+#             cursor=conn.cursor()
+#             cursor.execute('SELECT * FROM  Usuarios ORDER BY Id DESC')
+#             prueba = cursor.fetchall()
+#             print(prueba)
+#             #return prueba
+#             return render_template('LoginComprador.html')
+        #except Exception as d:
+         #   return json.dumps({'error':str(d)})
+        #finally:
+         #   cursor.close()
+          #  conn.close()

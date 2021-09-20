@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <link rel="shortcut icon" href="img/1085961.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../Static/css/normalize 1.css">
-    <link rel="stylesheet" href="../Static/css/skeleton 1.css">
-    <link rel="stylesheet" href="../Static/css/style 1.css">
+    <link rel="stylesheet" href="css/normalize_1.css">
+    <link rel="stylesheet" href="css/skeleton_1.css">
+    <link rel="stylesheet" href="css/style_1.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,20 +23,22 @@
     
     <section class="Inicio">
         <h3 class="Titulo">Inicio de sesion Comprador </h3>
-        <form action="interfazC.html" method="POST">
-            <input type="email" name="c" placeholder="Escribe tu correo"/>
+        <form action="/" method="POST">
+            <!--<input type="email" name="c" placeholder="Escribe tu correo"/>
             <input type="password" name="p" placeholder="Escribe tu password"/>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>-->
+            <form method="POST" action='/login'>
+                <label>correo de usuario:<input type="text" name="correo" value=""></label><br>
+                <label>contrasena:<input type="password" name="contrasena" value=""></label><br>
+                <input type="submit" value="iniciar sesión">
+            </form>
         </form>
         <h4 class="Titulo1">Crear cuenta
-            <form action="interfazC.html" method="POST">
-                <h5>
-                    <input type="email" name="c" placeholder="Escribe tu correo"/>
-                    <input type="password" name="p" placeholder="Escribe tu password"/>
-                    <input type="confirmarpassword" name="cp" placeholder="Confirma tu password"/>
-                    <button type="submit" class="btn btn-primary btn-block btn-large">Aceptar</button>
-                </h5>
-            </form>
+                    <form method="POST" action='/registuser'>
+                        <label>correo:<input type="text" name="correo" value=""></label>
+                        <label>contrasena:<input type="password" name="contrasena" value=""></label>
+                        <button type="submit"> regsitrado</button>
+                    </form>
         </h4>
 
       
