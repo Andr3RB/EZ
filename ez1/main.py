@@ -66,7 +66,7 @@ def registuser():
              contrasena=request.form['contrasena']
              conn=cnx.mysql.connect()
              cursor=conn.cursor()
-             cursor.execute("INSERT INTO Usuarios(correo, contrasena) VALUES (%s, %s)",(correo, contrasena,))
+             cursor.execute("INSERT INTO Usuarios(correo, contrasena) VALUES (%s, %s)",(correo, contrasena,)) #Este insert debe ir en el DAO 
              return render_template('LoginComprador.html')
         except Exception as e:
          return json.dumps({'error':str(e)})
